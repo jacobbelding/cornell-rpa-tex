@@ -1,0 +1,81 @@
+\documentclass[phd,tocprelim,11pt]{cornell_rpa}
+
+\usepackage[version=4]{mhchem}
+\usepackage{graphicx,pstricks}
+\usepackage{graphics}
+\usepackage{moreverb}
+\usepackage{subfigure}
+\usepackage{epsfig}
+\usepackage{subfigure}
+\usepackage{caption}
+\usepackage{txfonts}
+\usepackage{palatino}
+\usepackage[super,sort&compress,comma]{natbib}
+\usepackage{hyperref}
+\usepackage[english]{babel}
+
+\bibliographystyle{rsc}
+
+\renewcommand{\caption}[1]{\singlespacing\hangcaption{#1}\normalspacing}
+\renewcommand{\topfraction}{0.85}
+\renewcommand{\textfraction}{0.1}
+\renewcommand{\floatpagefraction}{0.75}
+
+\makeatletter
+\renewcommand\@biblabel[1]{#1}
+\makeatother
+\setlength\bibsep{1pt}
+
+\title {Project title here}
+\author {FirstName LastName}
+\conferraldate {August}{2023}
+\degreefield {Ph.D.}
+
+\begin{document}
+
+\maketitle
+
+\normalspacing \setcounter{page}{1} \pagenumbering{arabic}
+\pagestyle{cornell} \addtolength{\parskip}{0.5\baselineskip}
+
+\chapter{Specific Aims}
+
+This template is modified from the Cornell dissertation template\cite{cornell_university_templates_nodate} to remove the unneeded sections and comply with the RPA's format requirements. In order to properly generate the document, run:
+
+\begin{enumerate}
+	\item \begin{verbatim}pdflatex example.tex\end{verbatim}
+	\item \begin{verbatim}bibtex example.aux\end{verbatim}
+	\item \begin{verbatim}pdflatex example.tex\end{verbatim}
+	\item \begin{verbatim}pdflatex example.tex\end{verbatim}
+\end{enumerate}
+
+This is necessary in order to properly format the bibliography and references. It is only necessary to run all of this if the bibliography or citations are changed. Other content changes can be updated into the pdf with just a single issuance of \begin{verbatim}pdflatex example.tex\end{verbatim}.
+
+(Tested using a full install of TeXLive\cite{tex_users_group_tex_nodate} on Debian-based Linux, usage could vary slightly depending on your TeX environment).
+
+\section{Aim 1: Discover a new extremophilic organism.}
+We would like to sample deep oceanic vents to find some new archaea that live at very high temperatures. Currently, the hottest known organism is \emph{Methanopyrus kandleri} which can grow at 110°C\cite{kurr_methanopyrus_1991}.
+
+\section{Aim 2: Get published for thinking of a cool shape.}
+Similarly to recent fruitful efforts to discover a chiral aperiodic monotile\cite{smith_chiral_2023}, we would also like to think up some really neat lil shapes and explore their mathematical properties.
+
+\chapter{Research Proposal}
+
+\section{Background and Rationale}
+
+\section{Preliminary Data}
+
+\section{Research Approach}
+
+\section{Anticipated Outcomes}
+
+\subsection{Intended Outcomes}
+
+\subsection{Alternatives}
+
+\twocolumn
+
+% change 'example' to the name of your .bib file
+\bibliography{example}
+
+\end{document}
